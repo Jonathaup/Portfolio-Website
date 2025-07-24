@@ -1,11 +1,16 @@
+// Import the Mongoose library to interact with MongoDB
 const mongoose = require('mongoose');
-const Project = require('./models/Project'); // Asegúrate que esta ruta es correcta
 
+// Import the Project model
+const Project = require('./models/Project');
+
+// Connect to the local MongoDB database named 'portfolioDB'
 mongoose.connect('mongodb://127.0.0.1:27017/portfolioDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
+// Sample project data to seed the database
 const sampleProjects = [
   {
     title: "To-Do List App",
@@ -27,13 +32,13 @@ const sampleProjects = [
   }
 ];
 
-// Insertar proyectos y cerrar conexión
+// Insert sample projects into the database and close the connection
 Project.insertMany(sampleProjects)
   .then(() => {
     console.log("✅ Database seeded with projects!");
-    mongoose.connection.close();
+    mongoose.connection.close(); // Close connection after seeding
   })
   .catch(err => {
-    console.error("❌ Seeding error:", err);
-    mongoose.connection.close();
+    console.error("❌ Error seeding the database:", err);
+    mongoose.connection.close(); // Ensure connection is closed on error
   });

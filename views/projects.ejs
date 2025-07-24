@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <title>Projects - Portfolio</title>
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="container">
+    <!-- Main heading -->
     <h1>Projects</h1>
 
+    <!-- Link to return to main dashboard -->
     <a href="/" class="back-button">← View My Dashboard</a>
 
+    <!-- Search form -->
     <form method="get" action="/projects">
       <input
         type="text"
@@ -21,10 +25,12 @@
       <button type="submit">Search</button>
     </form>
 
+    <!-- Message if no projects are found -->
     <% if (projects.length === 0) { %>
       <p>No projects found.</p>
     <% } %>
 
+    <!-- Loop through and display each project -->
     <% projects.forEach(project => { %>
       <div class="project">
         <h2><%= project.title %></h2>

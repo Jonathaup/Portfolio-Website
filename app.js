@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Conectar a MongoDB
-mongoose.connect('mongodb://localhost:27017/portfolio', {
+mongoose.connect('mongodb://localhost:27017/portfolioDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {

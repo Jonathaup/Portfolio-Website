@@ -6,30 +6,35 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <h1>Projects</h1>
-  <form method="get" action="/projects">
-    <input
-      type="text"
-      name="search"
-      placeholder="Search projects"
-      value="<%= typeof search !== 'undefined' ? search : '' %>"
-    />
-    <button type="submit">Search</button>
-  </form>
+  <div class="container">
+    <h1>Projects</h1>
 
-  <% if (projects.length === 0) { %>
-    <p>No projects found.</p>
-  <% } %>
+    <a href="/" class="back-button">← View My Dashboard</a>
 
-  <% projects.forEach(project => { %>
-    <div class="project">
-      <h2><%= project.title %></h2>
-      <% if (project.imageUrl) { %>
-        <img src="<%= project.imageUrl %>" alt="<%= project.title %>" width="150" />
-      <% } %>
-      <p><%= project.description %></p>
-      <p>Tags: <%= project.tags.join(', ') %></p>
-    </div>
-  <% }) %>
+    <form method="get" action="/projects">
+      <input
+        type="text"
+        name="search"
+        placeholder="Search projects"
+        value="<%= typeof search !== 'undefined' ? search : '' %>"
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <% if (projects.length === 0) { %>
+      <p>No projects found.</p>
+    <% } %>
+
+    <% projects.forEach(project => { %>
+      <div class="project">
+        <h2><%= project.title %></h2>
+        <% if (project.imageUrl) { %>
+          <img src="<%= project.imageUrl %>" alt="<%= project.title %>" width="150" />
+        <% } %>
+        <p><%= project.description %></p>
+        <p><strong>Tags:</strong> <%= project.tags.join(', ') %></p>
+      </div>
+    <% }) %>
+  </div>
 </body>
 </html>

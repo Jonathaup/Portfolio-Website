@@ -1,28 +1,37 @@
 # Overview
 
-As a programmer, I want to improve my skills in JavaScript and backend development by creating a dynamic Portfolio Website using Node.js, Express, and MongoDB. This web application showcases my projects and achievements, allowing users to interactively search and filter projects.
+This work is an interactive Portfolio Website built to reinforce my full-stack web development skill set, with a focus on JavaScript, Node.js, Express, and MongoDB. The web application showcases my programming projects, allowing users to browse and interactively search projects via server-side rendering and database integration.
 
-The goal is to practice server-side rendering, database integration, and user interaction in a web app context, enhancing my full-stack development abilities.
+To run the app locally, start the Express dev server by running `node app.js` in the project root. Open your browser and navigate to `http://localhost:3000` to see the home page of the portfolio.
 
-[Software Demo Video](http://youtube.link.goes.here) <!-- Puedes cambiar este enlace por tu video real -->
+The only function of the app is to have some fun building a full-stack web application focused on backend development, templating with EJS, and attaching a MongoDB database for dynamic content storage.
+
+[Software Demo Video](http://youtube.link.goes.here)
+
+# Web Pages
+
+- **Home Page (`/`)**: Personal welcome, profile photo, skills list, and link to the Projects page.
+- **Projects Page (`/projects`)**: A list of all portfolio projects dynamically fetched from MongoDB. It features a search form to filter by project title, and the results are shown on the same page.
+
+The application navigates from the home page to the project page using navigation links. The two pages utilize EJS templates to generate dynamic HTML content from database data and user input.
 
 # Development Environment
 
-I developed this software using Visual Studio Code on Windows 10. The backend is implemented with Node.js and Express, using JavaScript as the main programming language. MongoDB is used as the database for storing project information.
+The application was developed using Visual Studio Code on Windows 10. Node.js and Express were utilized for the backend with the use of JavaScript as the programming language. MongoDB is the database used to store data about projects.
 
-EJS templating engine is used to render dynamic HTML pages, and CSS is applied for basic styling. The app runs locally on the Express development server.
+EJS is used as the templating engine to render dynamic HTML pages, and CSS is used to dress the user interface. The application is run on a local development server of Express.
 
 # Useful Websites
 
-- [Node.js Official Site](https://nodejs.org/)
-- [Express Documentation](https://expressjs.com/)
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [EJS Templating](https://ejs.co/)
-- [BYU-Idaho CSE 310 Module Descriptions](https://byui-cse.github.io/cse310-ww-course/modules/module_descriptions.html)
+* [Node.js Official Site](https://nodejs.org/)
+* [Express Documentation](https://expressjs.com/)
+* [MongoDB Documentation](https://docs.mongodb.com/)
+* [EJS Templating](https://ejs.co/)
+* [BYU-Idaho CSE 310 Module Descriptions](https://byui-cse.github.io/cse310-ww-course/modules/module_descriptions.html)
 
 # Future Work
 
-- Add user authentication and project submission forms.
-- Implement pagination and more advanced filtering options.
-- Enhance UI with responsive design and animations.
-- Deploy the application to a cloud hosting service for public access.
+* Implement user authentication and allow users to post new projects.
+* Add pagination and advanced filtering features on the Projects page.
+* Beautify the UI with responsive design and animations for better user experience.
+* Launch the application onto a cloud host for public consumption.

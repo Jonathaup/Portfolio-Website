@@ -8,7 +8,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment variables (si usas .env)
+# Environment variables 
 .env
 
 # MacOS system files
@@ -17,9 +17,9 @@ yarn-error.log*
 # Visual Studio Code settings
 .vscode/
 
-# MongoDB local database files (si alguna vez usas archivos locales)
+# MongoDB local database files 
 data/
 
-# Output folder (si usas compiladores o build)
+# Output folder 
 dist/
 build/

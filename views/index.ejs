@@ -2,11 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Home - Portfolio</title>
+  <title>Jonathan Uribe - Portfolio</title>
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <a href="/projects">View Projects</a>
+  <div class="container">
+    <!-- Main header with name -->
+    <h1>Jonathan Uribe - Portfolio</h1>
+
+    <!-- Profile image of the developer -->
+    <img class="profile" 
+      src="https://i.postimg.cc/wT8PKGn6/20250715-163032.jpg" 
+      alt="Jonathan's photo" 
+      width="150" 
+      style="border-radius: 50%; margin-bottom: 15px;"
+    />
+
+    <!-- Short personal introduction -->
+    <p>I’m a web developer student learning JavaScript, Node.js, and MongoDB. This site showcases my programming projects and skills.</p>
+
+    <!-- List of skills -->
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+      <li>Express</li>
+    </ul>
+
+    <!-- Navigation button to view the list of projects -->
+    <a href="/projects" class="back-button" style="background-color: #3498db;">
+      View My Projects
+    </a>
+  </div>
 </body>
 </html>

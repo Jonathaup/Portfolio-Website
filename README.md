@@ -6,7 +6,7 @@ To run the app locally, start the Express dev server by running `node app.js` in
 
 The only function of the app is to have some fun building a full-stack web application focused on backend development, templating with EJS, and attaching a MongoDB database for dynamic content storage.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/rKhv63zaJiM)
 
 # Web Pages
 
